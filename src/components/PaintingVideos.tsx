@@ -12,10 +12,10 @@ const videos = [
 
 export const PaintingVideos = () => {
   return (
-    <section id="videos" className="py-24 bg-[var(--bg-primary)] px-6">
+    <section id="videos" className="py-24 bg-transparent px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-syne mb-6 text-white">Painting Videos</h2>
+          <h2 className="text-3xl md:text-5xl font-bold font-syne mb-6 text-slate-900">Painting Videos</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
           {videos.map((vid, idx) => (
@@ -25,7 +25,7 @@ export const PaintingVideos = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: (idx % 3) * 0.1 }}
               viewport={{ once: true }}
-              className="rounded-2xl overflow-hidden border border-[var(--border-glass)] aspect-video bg-black"
+              className="rounded-2xl overflow-hidden border border-[var(--border-glass)] aspect-video bg-slate-50"
             >
               <video 
                 src={getAssetPath(`/videos/${vid}`)}

@@ -84,8 +84,8 @@ export const Services = () => {
     <section id="services" className="py-24 bg-[var(--bg-secondary)] px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-syne mb-6 text-white">Our Services</h2>
-          <p className="text-slate-400 font-inter max-w-2xl mx-auto text-lg">
+          <h2 className="text-3xl md:text-5xl font-bold font-syne mb-6 text-slate-900">Our Services</h2>
+          <p className="text-slate-600 font-inter max-w-2xl mx-auto text-lg">
             From residential interiors to custom bike painting, we provide a comprehensive range of professional painting solutions tailored to your exact needs.
           </p>
         </div>
@@ -122,16 +122,16 @@ export const Services = () => {
                 tiltMaxAngleY={5}
                 className="h-full group cursor-pointer"
               >
-                <div className="bg-[var(--bg-primary)] rounded-2xl p-8 border border-[var(--border-glass)] h-full flex flex-col relative overflow-hidden transition-colors hover:border-[#06B6D4]/50">
+                <div className="bg-transparent rounded-2xl p-8 border border-[var(--border-glass)] h-full flex flex-col relative overflow-hidden transition-colors hover:border-[#06B6D4]/50">
                   {/* Subtle Background Glow on Hover */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#06B6D4]/5 blur-[50px] rounded-full group-hover:bg-[#06B6D4]/20 transition-colors duration-500" />
                   
-                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
                   
-                  <h3 className="text-xl font-bold font-syne text-white mb-3 relative z-10">{service.title}</h3>
-                  <p className="text-slate-400 text-sm font-inter leading-relaxed relative z-10">
+                  <h3 className="text-xl font-bold font-syne text-slate-900 mb-3 relative z-10">{service.title}</h3>
+                  <p className="text-slate-600 text-sm font-inter leading-relaxed relative z-10">
                     {service.description}
                   </p>
                 </div>

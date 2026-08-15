@@ -31,13 +31,13 @@ export const Header = () => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <img src={getAssetPath('/logo2.png')} alt="Rahman Arts Logo" className="h-24 w-auto object-contain drop-shadow-md" />
-          <span className="font-syne font-bold text-2xl tracking-wide text-white hidden sm:block">Rahman Arts</span>
+          <span className="font-syne font-bold text-2xl tracking-wide text-slate-900 hidden sm:block">Rahman Arts</span>
         </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-sm font-inter text-slate-300 hover:text-white transition-colors">
+            <a key={link.name} href={link.href} className="text-sm font-inter text-slate-700 hover:text-slate-900 transition-colors">
               {link.name}
             </a>
           ))}
@@ -48,7 +48,7 @@ export const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white p-2"
+          className="md:hidden text-slate-900 p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -61,14 +61,14 @@ export const Header = () => {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-full left-0 right-0 bg-[#09090b]/95 backdrop-blur-xl border-b border-white/10 md:hidden flex flex-col py-6 px-6 gap-6 shadow-2xl"
+          className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-slate-200 md:hidden flex flex-col py-6 px-6 gap-6 shadow-2xl"
         >
           {navLinks.map((link) => (
             <a 
               key={link.name} 
               href={link.href} 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-lg font-inter text-slate-300 hover:text-white"
+              className="text-lg font-inter text-slate-700 hover:text-slate-900"
             >
               {link.name}
             </a>

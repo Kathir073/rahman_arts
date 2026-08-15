@@ -518,7 +518,7 @@ export const Gallery = () => {
     <section id="gallery" className="py-24 bg-[var(--bg-secondary)] px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-syne mb-6 text-white">Gallery</h2>
+          <h2 className="text-3xl md:text-5xl font-bold font-syne mb-6 text-slate-900">Gallery</h2>
           
           {/* Categories removed */}
         </div>
@@ -545,7 +545,7 @@ export const Gallery = () => {
                   className="h-full group cursor-pointer"
                 >
                   <div 
-                    className="bg-[var(--bg-primary)] rounded-2xl overflow-hidden border border-[var(--border-glass)] h-full flex flex-col relative"
+                    className="bg-transparent rounded-2xl overflow-hidden border border-[var(--border-glass)] h-full flex flex-col relative"
                     onClick={() => setSelectedImage(item.image)}
                   >
                     {/* Image Container */}
@@ -558,8 +558,8 @@ export const Gallery = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       
                       {/* Hover text for full view */}
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                        <span className="text-white font-inter font-medium px-4 py-2 bg-white/20 rounded-full border border-white/30 backdrop-blur-md">
+                      <div className="absolute inset-0 bg-slate-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <span className="text-slate-900 font-inter font-medium px-4 py-2 bg-white/20 rounded-full border border-white/30 backdrop-blur-md">
                           Click to full view
                         </span>
                       </div>
@@ -576,7 +576,7 @@ export const Gallery = () => {
           <div className="mt-12 flex justify-center">
             <button
               onClick={() => setVisibleCount(prev => prev + 12)}
-              className="px-8 py-3 bg-transparent border border-white/20 hover:bg-white/10 text-white font-medium rounded-xl transition-all duration-300 font-inter"
+              className="px-8 py-3 bg-transparent border border-slate-300 hover:bg-slate-200 text-slate-900 font-medium rounded-xl transition-all duration-300 font-inter"
             >
               Load More
             </button>
@@ -592,11 +592,11 @@ export const Gallery = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-12 bg-black/90 backdrop-blur-sm cursor-zoom-out"
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-12 bg-slate-50/90 backdrop-blur-sm cursor-zoom-out"
           >
             <button 
               onClick={() => setSelectedImage(null)}
-              className="absolute top-6 right-6 text-white hover:text-slate-300 transition-colors bg-white/10 p-2 rounded-full z-50"
+              className="absolute top-6 right-6 text-slate-900 hover:text-slate-700 transition-colors bg-slate-200 p-2 rounded-full z-50"
             >
               <X className="w-6 h-6" />
             </button>

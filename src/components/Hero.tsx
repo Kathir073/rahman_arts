@@ -8,7 +8,7 @@ import { getAssetPath } from '@/lib/assetPath';
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-[var(--bg-primary)] text-white flex items-center overflow-hidden px-6 lg:px-12 py-20">
+    <section className="relative min-h-screen bg-transparent text-slate-900 flex items-center overflow-hidden px-6 lg:px-12 py-20">
       
       {/* Subtle Background Glow */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-amber-500/10 to-yellow-500/10 blur-[150px] pointer-events-none rounded-full translate-x-1/3 -translate-y-1/3" />
@@ -35,7 +35,7 @@ export const Hero = () => {
             className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter leading-[1.05] font-syne"
           >
             Transforming <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-yellow-600 to-amber-700">
               Spaces
             </span> <br />
             with Color.
@@ -45,7 +45,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-slate-400 text-lg sm:text-xl font-light leading-relaxed font-inter max-w-lg"
+            className="text-slate-600 text-lg sm:text-xl font-light leading-relaxed font-inter max-w-lg"
           >
             Elevate your environment with expert painting services for buildings, pillars, roofs, elevations, interiors, exteriors, furniture, and automobiles.
           </motion.p>
@@ -60,7 +60,7 @@ export const Hero = () => {
               View Services
               <ArrowRight className="w-5 h-5" />
             </a>
-            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/20 hover:bg-white/5 text-white font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 font-inter">
+            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-transparent border border-slate-300 hover:bg-slate-100 text-slate-900 font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 font-inter">
               <PaintRoller className="w-5 h-5" />
               Book a Consultation
             </a>
@@ -71,15 +71,15 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="flex items-center gap-8 pt-10 border-t border-white/10"
+            className="flex items-center gap-8 pt-10 border-t border-slate-200"
           >
             <div>
-              <p className="text-3xl font-bold font-syne text-white">500+</p>
+              <p className="text-3xl font-bold font-syne text-slate-900">500+</p>
               <p className="text-sm text-slate-500 font-inter mt-1 uppercase tracking-wider">Projects Completed</p>
             </div>
-            <div className="w-px h-12 bg-white/10"></div>
+            <div className="w-px h-12 bg-slate-200"></div>
             <div>
-              <p className="text-3xl font-bold font-syne text-white">12+</p>
+              <p className="text-3xl font-bold font-syne text-slate-900">12+</p>
               <p className="text-sm text-slate-500 font-inter mt-1 uppercase tracking-wider">Years Active</p>
             </div>
           </motion.div>
@@ -102,7 +102,7 @@ export const Hero = () => {
             glareMaxOpacity={0.45}
             glareColor="#ffffff"
             glarePosition="all"
-            className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl shadow-black/50 group"
+            className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl shadow-slate-200/50 group"
           >
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
@@ -113,8 +113,8 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
             
             <div className="absolute bottom-10 left-10 right-10">
-              <p className="text-white font-syne text-2xl font-bold mb-2">Flawless Finish</p>
-              <p className="text-slate-300 font-inter text-sm">Premium Painting Execution</p>
+              <p className="text-slate-900 font-syne text-2xl font-bold mb-2">Flawless Finish</p>
+              <p className="text-slate-700 font-inter text-sm">Premium Painting Execution</p>
             </div>
           </Tilt>
 

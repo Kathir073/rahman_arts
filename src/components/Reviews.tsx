@@ -90,12 +90,12 @@ export const Reviews = () => {
         <div className="lg:col-span-5 space-y-12">
           
           {/* Submit Review Form */}
-          <div className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm">
-            <h3 className="text-2xl font-bold font-syne text-white mb-6">Leave a Review</h3>
+          <div className="bg-slate-100 border border-slate-200 p-8 rounded-3xl backdrop-blur-sm">
+            <h3 className="text-2xl font-bold font-syne text-slate-900 mb-6">Leave a Review</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300 font-inter">Your Rating</label>
+                <label className="text-sm font-medium text-slate-700 font-inter">Your Rating</label>
                 <div className="flex gap-2">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <button
@@ -113,29 +113,29 @@ export const Reviews = () => {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300 font-inter">Full Name</label>
+                <label className="text-sm font-medium text-slate-700 font-inter">Full Name</label>
                 <input 
                   type="text" 
                   value={newName}
                   onChange={(e) => setNewName(e.target.value)}
-                  className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-[#06B6D4] focus:outline-none font-inter" 
+                  className="w-full bg-slate-50/20 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:border-[#06B6D4] focus:outline-none font-inter" 
                   placeholder="John Doe" 
                   required
                 />
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-300 font-inter">Your Review</label>
+                <label className="text-sm font-medium text-slate-700 font-inter">Your Review</label>
                 <textarea 
                   value={newText}
                   onChange={(e) => setNewText(e.target.value)}
-                  className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-[#06B6D4] focus:outline-none font-inter min-h-[120px] resize-none" 
+                  className="w-full bg-slate-50/20 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:border-[#06B6D4] focus:outline-none font-inter min-h-[120px] resize-none" 
                   placeholder="Tell us about your experience..."
                   required
                 />
               </div>
 
-              <button type="submit" className="w-full py-4 bg-[#FF5722] hover:bg-[#e64a19] text-white font-bold rounded-xl transition-colors font-syne text-lg">
+              <button type="submit" className="w-full py-4 bg-[#FF5722] hover:bg-[#e64a19] text-slate-900 font-bold rounded-xl transition-colors font-syne text-lg">
                 Submit Review
               </button>
             </form>
@@ -143,14 +143,14 @@ export const Reviews = () => {
           
           {/* Filter Controls */}
           <div>
-            <h3 className="text-xl font-bold font-syne text-white mb-4">Filter by Rating</h3>
+            <h3 className="text-xl font-bold font-syne text-slate-900 mb-4">Filter by Rating</h3>
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => setFilterRating(null)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 font-inter border ${
                   filterRating === null
-                    ? 'bg-[#06B6D4] text-white border-[#06B6D4]' 
-                    : 'bg-transparent text-slate-400 border-white/10 hover:border-white/30 hover:text-white'
+                    ? 'bg-[#06B6D4] text-slate-900 border-[#06B6D4]' 
+                    : 'bg-transparent text-slate-600 border-slate-200 hover:border-white/30 hover:text-slate-900'
                 }`}
               >
                 All Reviews
@@ -161,8 +161,8 @@ export const Reviews = () => {
                   onClick={() => setFilterRating(star)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 font-inter border flex items-center gap-1 ${
                     filterRating === star
-                      ? 'bg-white/10 text-white border-white/20' 
-                      : 'bg-transparent text-slate-500 border-white/5 hover:border-white/20 hover:text-white'
+                      ? 'bg-slate-200 text-slate-900 border-slate-300' 
+                      : 'bg-transparent text-slate-500 border-white/5 hover:border-slate-300 hover:text-slate-900'
                   }`}
                 >
                   {star} <Star className="w-3 h-3 fill-current" />
@@ -176,14 +176,14 @@ export const Reviews = () => {
         {/* Right Column: Reviews List */}
         <div className="lg:col-span-7">
           <div className="flex items-end justify-between mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold font-syne text-white">Client Stories</h2>
-            <span className="text-slate-400 font-inter hidden sm:block">
+            <h2 className="text-3xl md:text-5xl font-bold font-syne text-slate-900">Client Stories</h2>
+            <span className="text-slate-600 font-inter hidden sm:block">
               {filteredReviews.length} {filteredReviews.length === 1 ? 'Review' : 'Reviews'}
             </span>
           </div>
 
           {/* Scrollable Container */}
-          <div className="max-h-[600px] overflow-y-auto pr-4 space-y-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-white/10 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-transparent hover:[&::-webkit-scrollbar-thumb]:bg-white/20">
+          <div className="max-h-[600px] overflow-y-auto pr-4 space-y-6 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-slate-200 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-transparent hover:[&::-webkit-scrollbar-thumb]:bg-white/20">
             <AnimatePresence mode="popLayout">
               {filteredReviews.map((review) => (
                 <motion.div
@@ -193,7 +193,7 @@ export const Reviews = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.4 }}
-                  className="bg-white/5 border border-white/10 p-6 sm:p-8 rounded-3xl"
+                  className="bg-slate-100 border border-slate-200 p-6 sm:p-8 rounded-3xl"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-4">
@@ -201,7 +201,7 @@ export const Reviews = () => {
                         <UserCircle2 className="w-8 h-8" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-white font-syne text-lg">{review.name}</h4>
+                        <h4 className="font-bold text-slate-900 font-syne text-lg">{review.name}</h4>
                         <span className="text-xs text-slate-500 font-inter">{review.date}</span>
                       </div>
                     </div>
@@ -214,7 +214,7 @@ export const Reviews = () => {
                       ))}
                     </div>
                   </div>
-                  <p className="text-slate-300 font-inter leading-relaxed">
+                  <p className="text-slate-700 font-inter leading-relaxed">
                     "{review.text}"
                   </p>
                 </motion.div>

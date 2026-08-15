@@ -28,7 +28,7 @@ const steps = [
 
 export const ProcessTimeline = () => {
   return (
-    <section className="py-24 bg-[var(--bg-primary)] px-6 relative overflow-hidden">
+    <section className="py-24 bg-transparent px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#06B6D4]/5 blur-[150px] rounded-full pointer-events-none" />
 
@@ -38,11 +38,11 @@ export const ProcessTimeline = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-bold font-syne mb-4 text-white"
+            className="text-3xl md:text-5xl font-bold font-syne mb-4 text-slate-900"
           >
             How The Magic Happens
           </motion.h2>
-          <p className="text-slate-400 font-inter max-w-2xl mx-auto">
+          <p className="text-slate-600 font-inter max-w-2xl mx-auto">
             A meticulous 4-step process to transform your space into a masterpiece.
           </p>
         </div>
@@ -55,13 +55,13 @@ export const ProcessTimeline = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="relative p-6 rounded-2xl bg-white/5 border border-[var(--border-glass)] backdrop-blur-sm group hover:border-[#FF5722]/50 transition-colors"
+              className="relative p-6 rounded-2xl bg-slate-100 border border-[var(--border-glass)] backdrop-blur-sm group hover:border-[#FF5722]/50 transition-colors"
             >
-              <div className="text-5xl font-extrabold font-syne text-white/10 mb-6 group-hover:text-[#FF5722]/20 transition-colors">
+              <div className="text-5xl font-extrabold font-syne text-slate-900/10 mb-6 group-hover:text-[#FF5722]/20 transition-colors">
                 {step.number}
               </div>
-              <h3 className="text-xl font-bold font-syne text-white mb-3">{step.title}</h3>
-              <p className="text-slate-400 text-sm font-inter leading-relaxed">{step.desc}</p>
+              <h3 className="text-xl font-bold font-syne text-slate-900 mb-3">{step.title}</h3>
+              <p className="text-slate-600 text-sm font-inter leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}
         </div>
