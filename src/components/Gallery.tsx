@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
-import { X } from 'lucide-react';
+import { X, ZoomIn } from 'lucide-react';
+import { getAssetPath } from '@/lib/assetPath';
 
 const categories = [
   "All Works", 
@@ -21,7 +22,7 @@ const portfolioItems = [
     "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/img_1.jpg"
+    "image": getAssetPath("/images/img_1.jpg")
   },
   {
     "id": 2,

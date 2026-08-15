@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { getAssetPath } from '@/lib/assetPath';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ export const Header = () => {
         
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
-          <img src="/logo2.png" alt="Rahman Arts Logo" className="h-24 w-auto object-contain drop-shadow-md" />
+          <img src={getAssetPath('/logo2.png')} alt="Rahman Arts Logo" className="h-24 w-auto object-contain drop-shadow-md" />
           <span className="font-syne font-bold text-2xl tracking-wide text-white hidden sm:block">Rahman Arts</span>
         </a>
 

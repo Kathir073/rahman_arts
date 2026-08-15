@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { getAssetPath } from "@/lib/assetPath";
 
 const videos = [
   "vid_1.mp4",
@@ -27,9 +28,9 @@ export const PaintingVideos = () => {
               className="rounded-2xl overflow-hidden border border-[var(--border-glass)] aspect-video bg-black"
             >
               <video 
-                src={`/videos/${vid}`}
+                src={getAssetPath(`/videos/${vid}`)}
                 controls
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
                 preload="metadata"
               />
             </motion.div>

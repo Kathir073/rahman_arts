@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, PaintRoller, Sparkles } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
+import { getAssetPath } from '@/lib/assetPath';
 
 export const Hero = () => {
   return (
@@ -103,7 +104,10 @@ export const Hero = () => {
             glarePosition="all"
             className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl shadow-black/50 group"
           >
-            <div className="absolute inset-0 bg-[url('/images/img_1.jpg')] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" />
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
+              style={{ backgroundImage: `url(${getAssetPath('/images/img_1.jpg')})` }}
+            />
             
             {/* Elegant overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
