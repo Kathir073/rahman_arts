@@ -85,27 +85,11 @@ export const Hero = () => {
           </motion.div>
         </div>
 
-        {/* Right: Floating 3D Image Canvas */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9, filter: 'blur(20px)' }}
-          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="relative block w-full max-w-md mx-auto mt-12 lg:mt-0 lg:max-w-none"
-        >
-          <Tilt
-            tiltMaxAngleX={15}
-            tiltMaxAngleY={15}
-            perspective={1000}
-            transitionSpeed={1500}
-            gyroscope={true}
-            glareEnable={true}
-            glareMaxOpacity={0.45}
-            glareColor="#ffffff"
-            glarePosition="all"
-            className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl shadow-slate-200/50 group"
-          >
+        {/* Right: Static Image */}
+        <div className="relative block w-full max-w-sm mx-auto mt-12 lg:mt-0 lg:max-w-sm">
+          <div className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl shadow-slate-200/50">
             <div 
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
+              className="absolute inset-0 bg-cover bg-center" 
               style={{ backgroundImage: `url(${getAssetPath('/images/img_1.jpg')})` }}
             />
             
@@ -113,15 +97,15 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
             
             <div className="absolute bottom-10 left-10 right-10">
-              <p className="text-slate-900 font-syne text-2xl font-bold mb-2">Flawless Finish</p>
-              <p className="text-slate-700 font-inter text-sm">Premium Painting Execution</p>
+              <p className="text-white font-syne text-2xl font-bold mb-2">Flawless Finish</p>
+              <p className="text-slate-200 font-inter text-sm">Premium Painting Execution</p>
             </div>
-          </Tilt>
+          </div>
 
           {/* Decorative accents */}
           <div className="absolute -top-6 -right-6 w-24 h-24 border-t-2 border-r-2 border-[#06B6D4] opacity-50" />
           <div className="absolute -bottom-6 -left-6 w-24 h-24 border-b-2 border-l-2 border-[#FF5722] opacity-50" />
-        </motion.div>
+        </div>
 
       </div>
     </section>
