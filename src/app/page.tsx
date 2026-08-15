@@ -6,21 +6,23 @@ import { PaintingVideos } from "@/components/PaintingVideos";
 import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { ContactForm } from "@/components/ContactForm";
 import { Reviews } from "@/components/Reviews";
+import { CostEstimator } from "@/components/CostEstimator";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--bg-primary)] text-white">
+    <main className="min-h-screen bg-transparent text-slate-900">
       <Header />
       <Hero />
       <Services />
       <Gallery />
-      <PaintingVideos />
       <ProcessTimeline />
-      <ContactForm />
+      <PaintingVideos />
+      <CostEstimator />
       <Reviews />
+      <ContactForm />
       
       {/* Footer */}
-      <footer className="py-8 border-t border-white/10 text-center text-slate-500 font-inter text-sm">
+      <footer className="py-8 border-t border-slate-200 text-center text-slate-600 font-inter text-sm">
         <p>&copy; {new Date().getFullYear()} Rahman Arts. All rights reserved.</p>
       </footer>
     </main>
