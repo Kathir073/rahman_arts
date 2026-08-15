@@ -18,482 +18,482 @@ const portfolioItems = [
   {
     "id": 1,
     "title": "Artwork 1",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good1.jpg"
+    "image": "/images/img_1.jpg"
   },
   {
     "id": 2,
     "title": "Artwork 2",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good2.jpg"
+    "image": "/images/img_2.jpg"
   },
   {
     "id": 3,
     "title": "Artwork 3",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good3.jpg"
+    "image": "/images/img_3.jpg"
   },
   {
     "id": 4,
     "title": "Artwork 4",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good4.jpg"
+    "image": "/images/img_4.jpg"
   },
   {
     "id": 5,
     "title": "Artwork 5",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good5.jpg"
+    "image": "/images/img_5.jpg"
   },
   {
     "id": 6,
     "title": "Artwork 6",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good6.jpg"
+    "image": "/images/img_6.jpg"
   },
   {
     "id": 7,
     "title": "Artwork 7",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good7.jpg"
+    "image": "/images/img_7.jpg"
   },
   {
     "id": 8,
     "title": "Artwork 8",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good8.jpg"
+    "image": "/images/img_8.jpg"
   },
   {
     "id": 9,
     "title": "Artwork 9",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good9.jpg"
+    "image": "/images/img_9.jpg"
   },
   {
     "id": 10,
     "title": "Artwork 10",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/good10.jpg"
+    "image": "/images/img_10.jpg"
   },
   {
     "id": 11,
     "title": "Artwork 11",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/heart.jpg"
+    "image": "/images/img_11.jpg"
   },
   {
     "id": 12,
     "title": "Artwork 12",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/home.jpg"
+    "image": "/images/img_12.jpg"
   },
   {
     "id": 13,
     "title": "Artwork 13",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (10).jpg"
+    "image": "/images/img_13.jpg"
   },
   {
     "id": 14,
     "title": "Artwork 14",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (11).jpg"
+    "image": "/images/img_14.jpg"
   },
   {
     "id": 15,
     "title": "Artwork 15",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (12).jpg"
+    "image": "/images/img_15.jpg"
   },
   {
     "id": 16,
     "title": "Artwork 16",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (13).jpg"
+    "image": "/images/img_16.jpg"
   },
   {
     "id": 17,
     "title": "Artwork 17",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (14).jpg"
+    "image": "/images/img_17.jpg"
   },
   {
     "id": 18,
     "title": "Artwork 18",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (15).jpg"
+    "image": "/images/img_18.jpg"
   },
   {
     "id": 19,
     "title": "Artwork 19",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (16).jpg"
+    "image": "/images/img_19.jpg"
   },
   {
     "id": 20,
     "title": "Artwork 20",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (18).jpg"
+    "image": "/images/img_20.jpg"
   },
   {
     "id": 21,
     "title": "Artwork 21",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (19).jpg"
+    "image": "/images/img_21.jpg"
   },
   {
     "id": 22,
     "title": "Artwork 22",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (2).jpg"
+    "image": "/images/img_22.jpg"
   },
   {
     "id": 23,
     "title": "Artwork 23",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (20).jpg"
+    "image": "/images/img_23.jpg"
   },
   {
     "id": 24,
     "title": "Artwork 24",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (21).jpg"
+    "image": "/images/img_24.jpg"
   },
   {
     "id": 25,
     "title": "Artwork 25",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (22).jpg"
+    "image": "/images/img_25.jpg"
   },
   {
     "id": 26,
     "title": "Artwork 26",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (23).jpg"
+    "image": "/images/img_26.jpg"
   },
   {
     "id": 27,
     "title": "Artwork 27",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (24).jpg"
+    "image": "/images/img_27.jpg"
   },
   {
     "id": 28,
     "title": "Artwork 28",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (25).jpg"
+    "image": "/images/img_28.jpg"
   },
   {
     "id": 29,
     "title": "Artwork 29",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (26).jpg"
+    "image": "/images/img_29.jpg"
   },
   {
     "id": 30,
     "title": "Artwork 30",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (27).jpg"
+    "image": "/images/img_30.jpg"
   },
   {
     "id": 31,
     "title": "Artwork 31",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (28).jpg"
+    "image": "/images/img_31.jpg"
   },
   {
     "id": 32,
     "title": "Artwork 32",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (29).jpg"
+    "image": "/images/img_32.jpg"
   },
   {
     "id": 33,
     "title": "Artwork 33",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (3).jpg"
+    "image": "/images/img_33.jpg"
   },
   {
     "id": 34,
     "title": "Artwork 34",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (30).jpg"
+    "image": "/images/img_34.jpg"
   },
   {
     "id": 35,
     "title": "Artwork 35",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (31).jpg"
+    "image": "/images/img_35.jpg"
   },
   {
     "id": 36,
     "title": "Artwork 36",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (32).jpg"
+    "image": "/images/img_36.jpg"
   },
   {
     "id": 37,
     "title": "Artwork 37",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (33).jpg"
+    "image": "/images/img_37.jpg"
   },
   {
     "id": 38,
     "title": "Artwork 38",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (35).jpg"
+    "image": "/images/img_38.jpg"
   },
   {
     "id": 39,
     "title": "Artwork 39",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (36).jpg"
+    "image": "/images/img_39.jpg"
   },
   {
     "id": 40,
     "title": "Artwork 40",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (37).jpg"
+    "image": "/images/img_40.jpg"
   },
   {
     "id": 41,
     "title": "Artwork 41",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (38).jpg"
+    "image": "/images/img_41.jpg"
   },
   {
     "id": 42,
     "title": "Artwork 42",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (39).jpg"
+    "image": "/images/img_42.jpg"
   },
   {
     "id": 43,
     "title": "Artwork 43",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (4).jpg"
+    "image": "/images/img_43.jpg"
   },
   {
     "id": 44,
     "title": "Artwork 44",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (40).jpg"
+    "image": "/images/img_44.jpg"
   },
   {
     "id": 45,
     "title": "Artwork 45",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (41).jpg"
+    "image": "/images/img_45.jpg"
   },
   {
     "id": 46,
     "title": "Artwork 46",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (42).jpg"
+    "image": "/images/img_46.jpg"
   },
   {
     "id": 47,
     "title": "Artwork 47",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (43).jpg"
+    "image": "/images/img_47.jpg"
   },
   {
     "id": 48,
     "title": "Artwork 48",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (44).jpg"
+    "image": "/images/img_48.jpg"
   },
   {
     "id": 49,
     "title": "Artwork 49",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (45).jpg"
+    "image": "/images/img_49.jpg"
   },
   {
     "id": 50,
     "title": "Artwork 50",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (46).jpg"
+    "image": "/images/img_50.jpg"
   },
   {
     "id": 51,
     "title": "Artwork 51",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (47).jpg"
+    "image": "/images/img_51.jpg"
   },
   {
     "id": 52,
     "title": "Artwork 52",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (48).jpg"
+    "image": "/images/img_52.jpg"
   },
   {
     "id": 53,
     "title": "Artwork 53",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (49).jpg"
+    "image": "/images/img_53.jpg"
   },
   {
     "id": 54,
     "title": "Artwork 54",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (5).jpg"
+    "image": "/images/img_54.jpg"
   },
   {
     "id": 55,
     "title": "Artwork 55",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (50).jpg"
+    "image": "/images/img_55.jpg"
   },
   {
     "id": 56,
     "title": "Artwork 56",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (6).jpg"
+    "image": "/images/img_56.jpg"
   },
   {
     "id": 57,
     "title": "Artwork 57",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (7).jpg"
+    "image": "/images/img_57.jpg"
   },
   {
     "id": 58,
     "title": "Artwork 58",
-    "category": "All Works",
+    "category": "Realistic Portraits",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (8).jpg"
+    "image": "/images/img_58.jpg"
   },
   {
     "id": 59,
     "title": "Artwork 59",
-    "category": "All Works",
+    "category": "Outdoor Murals",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed (9).jpg"
+    "image": "/images/img_59.jpg"
   },
   {
     "id": 60,
     "title": "Artwork 60",
-    "category": "All Works",
+    "category": "3D Optical Illusions",
     "type": "Custom Mural",
     "feature": "Hand-painted artwork",
-    "image": "/images/unnamed.jpg"
+    "image": "/images/img_60.jpg"
   }
 ];
 
@@ -523,7 +523,7 @@ export const Gallery = () => {
         </div>
 
         {/* Masonry / Grid */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div layout className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
           <AnimatePresence>
             {displayedItems.map(item => (
               <motion.div
@@ -550,7 +550,7 @@ export const Gallery = () => {
                     {/* Image Container */}
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img 
-                        src={`/rahman_arts${item.image}`} 
+                        src={item.image} 
                         alt={`Gallery artwork`} 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -604,7 +604,7 @@ export const Gallery = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              src={`/rahman_arts${selectedImage}`}
+              src={selectedImage}
               alt="Full view"
               className="w-auto h-auto max-w-full max-h-full rounded-lg shadow-2xl object-contain cursor-default"
               onClick={(e) => e.stopPropagation()}

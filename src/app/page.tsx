@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { Gallery } from "@/components/Gallery";
@@ -9,6 +10,7 @@ import { Reviews } from "@/components/Reviews";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--bg-primary)] text-white">
+      <Header />
       <Hero />
       <Services />
       <Gallery />

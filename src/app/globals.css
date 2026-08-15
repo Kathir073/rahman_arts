@@ -6,19 +6,23 @@
 }
 
 :root {
-  --bg-primary: #0A0A0C;         
-  --bg-secondary: #141419;       
-  --bg-glass: rgba(20, 20, 25, 0.75);
-  --text-primary: #F8FAFC;       
-  --text-muted: #94A3B8;         
-  --accent-orange: #FF5722;      
-  --accent-gold: #F59E0B;        
-  --accent-cyan: #06B6D4;        
-  --border-glass: rgba(255, 255, 255, 0.08);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --border-glass: rgba(251, 191, 36, 0.15);
+  --text-primary: #FFFFFF;       
+  --text-muted: rgba(255, 255, 255, 0.6);         
 }
 
 html, body {
-  background-color: var(--bg-primary);
+  background: linear-gradient(135deg, #000000, #1c1917, #0a0a0a, #292524);
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;
   color: var(--text-primary);
   scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
