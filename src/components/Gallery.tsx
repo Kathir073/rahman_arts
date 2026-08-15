@@ -550,7 +550,7 @@ export const Gallery = () => {
                     {/* Image Container */}
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img 
-                        src={item.image} 
+                        src={`/rahman_arts${item.image}`} 
                         alt={`Gallery artwork`} 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -604,7 +604,7 @@ export const Gallery = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              src={selectedImage}
+              src={`/rahman_arts${selectedImage}`}
               alt="Full view"
               className="w-auto h-auto max-w-full max-h-full rounded-lg shadow-2xl object-contain cursor-default"
               onClick={(e) => e.stopPropagation()}

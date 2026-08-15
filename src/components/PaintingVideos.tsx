@@ -45,7 +45,7 @@ export const PaintingVideos = () => {
               className="rounded-2xl overflow-hidden border border-[var(--border-glass)] aspect-video bg-black"
             >
               <video 
-                src={`/videos/${vid}`}
+                src={`/rahman_arts/videos/${vid}`}
                 controls
                 className="w-full h-full object-contain"
                 preload="metadata"
