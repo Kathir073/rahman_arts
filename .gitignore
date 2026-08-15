@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore large files
+public/videos/#37 Missing Filename File.mp4
+public/videos/video_20180127_141735.mp4
+# Ignore raw asset folders
+images/
+videos/
+
+generate.js
+
