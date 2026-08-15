@@ -37,7 +37,7 @@ export const ContactForm = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold font-syne text-slate-900 mb-6">Ready to Transform Your Space?</h2>
             <p className="text-slate-600 font-inter text-lg leading-relaxed">
-              Upload a photo of your blank wall, and let's craft a digital 3D concept before a single drop of paint touches the surface.
+              Visit our office or reach out to us directly to discuss your upcoming project. We're ready to bring your vision to life.
             </p>
           </motion.div>
 
@@ -86,52 +86,24 @@ export const ContactForm = () => {
           </motion.div>
         </div>
 
-        {/* Right: Form */}
+        {/* Right: Map */}
         <motion.div 
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-slate-100 border border-slate-200 p-8 rounded-3xl backdrop-blur-sm"
+          className="bg-slate-100 border border-slate-200 p-2 sm:p-4 rounded-3xl backdrop-blur-sm w-full h-full min-h-[400px]"
         >
-          <form className="space-y-6" onSubmit={e => e.preventDefault()}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700 font-inter">Full Name</label>
-                <input type="text" className="w-full bg-slate-100 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:border-[#06B6D4] focus:outline-none font-inter" placeholder="John Doe" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700 font-inter">Email Address</label>
-                <input type="email" className="w-full bg-slate-100 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:border-[#06B6D4] focus:outline-none font-inter" placeholder="john@example.com" />
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-700 font-inter">City / Address</label>
-              <input type="text" className="w-full bg-slate-100 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:border-[#06B6D4] focus:outline-none font-inter" placeholder="New York, NY" />
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-700 font-inter">Upload Wall Photo</label>
-              <div 
-                className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors ${dragActive ? 'border-[#06B6D4] bg-[#06B6D4]/5' : 'border-slate-300 bg-slate-100 hover:border-white/40'}`}
-                onDragEnter={handleDrag}
-                onDragLeave={handleDrag}
-                onDragOver={handleDrag}
-                onDrop={handleDrop}
-              >
-                <UploadCloud className="w-10 h-10 text-slate-600 mx-auto mb-4" />
-                <p className="text-slate-700 font-inter mb-1">Drag & drop your wall photo here</p>
-                <p className="text-slate-500 text-xs font-inter mb-4">PNG, JPG up to 10MB</p>
-                <button type="button" className="px-4 py-2 bg-slate-200 hover:bg-white/20 text-slate-900 text-sm rounded-lg transition-colors font-inter">
-                  Browse Files
-                </button>
-              </div>
-            </div>
-
-            <button type="submit" className="w-full py-4 bg-[#06B6D4] hover:bg-[#059eb8] text-slate-900 font-bold rounded-xl transition-colors font-syne text-lg">
-              Request Free Mockup
-            </button>
-          </form>
+          <iframe 
+            src="https://www.google.com/maps?q=Door+No.+9,+Amarar+Park+Road,+Attanur,+V.+Marudur,+Villupuram+-+605103,+Tamil+Nadu&output=embed" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0, borderRadius: '1rem' }} 
+            allowFullScreen={false} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Rahman Arts Location"
+            className="w-full h-full min-h-[400px]"
+          />
         </motion.div>
 
       </div>
