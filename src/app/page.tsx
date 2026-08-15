@@ -6,7 +6,6 @@ import { PaintingVideos } from "@/components/PaintingVideos";
 import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { ContactForm } from "@/components/ContactForm";
 import { Reviews } from "@/components/Reviews";
-import { CostEstimator } from "@/components/CostEstimator";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <Gallery />
       <ProcessTimeline />
       <PaintingVideos />
-      <CostEstimator />
       <Reviews />
       <ContactForm />
       
