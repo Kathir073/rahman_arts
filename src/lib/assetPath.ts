@@ -1,4 +1,4 @@
 export const getAssetPath = (path: string) => {
-  // Use relative paths to avoid GitHub Pages basePath issues
-  return `.${path.startsWith('/') ? path : `/${path}`}`;
+  const basePath = '/rahman_arts';
+  return `${basePath}${path.startsWith('/') ? path : `/${path}`}`;
 };
