@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, PaintRoller, Sparkles } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
 import { getAssetPath } from '@/lib/assetPath';
+import { getCldImageUrl } from 'next-cloudinary';
 
 export const Hero = () => {
   return (
@@ -90,7 +91,7 @@ export const Hero = () => {
           <div className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl shadow-slate-200/50">
             <div 
               className="absolute inset-0 bg-cover bg-center" 
-              style={{ backgroundImage: `url(${getAssetPath('/images/img_1.jpg')})` }}
+              style={{ backgroundImage: `url(${getCldImageUrl({ src: 'img_1' })})` }}
             />
             
             {/* Elegant overlay gradient */}
