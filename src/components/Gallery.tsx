@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { X, ZoomIn } from 'lucide-react';
 import { getAssetPath } from '@/lib/assetPath';
+import { CldImage } from 'next-cloudinary';
 
 const categories = [
   "All Works", 
@@ -498,6 +499,13 @@ const portfolioItems = [
   }
 ];
 
+// Helper to get cloudinary public ID from the image path
+const getCloudinaryId = (imagePath: string) => {
+  const parts = imagePath.split('/');
+  const filename = parts[parts.length - 1];
+  return filename.split('.')[0];
+};
+
 export const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState("All Works");
   const [visibleCount, setVisibleCount] = useState(12);
@@ -526,48 +534,53 @@ export const Gallery = () => {
         {/* Masonry / Grid */}
         <motion.div layout className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
           <AnimatePresence>
-            {displayedItems.map(item => (
-              <motion.div
-                key={item.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4 }}
-              >
-                <Tilt
-                  glareEnable={true}
-                  glareMaxOpacity={0.3}
-                  glareColor="#ffffff"
-                  glarePosition="all"
-                  tiltMaxAngleX={10}
-                  tiltMaxAngleY={10}
-                  className="h-full group cursor-pointer"
+            {displayedItems.map(item => {
+              const cloudId = getCloudinaryId(item.image);
+              return (
+                <motion.div
+                  key={item.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.4 }}
                 >
-                  <div 
-                    className="bg-transparent rounded-2xl overflow-hidden border border-[var(--border-glass)] h-full flex flex-col relative"
-                    onClick={() => setSelectedImage(item.image)}
+                  <Tilt
+                    glareEnable={true}
+                    glareMaxOpacity={0.3}
+                    glareColor="#ffffff"
+                    glarePosition="all"
+                    tiltMaxAngleX={10}
+                    tiltMaxAngleY={10}
+                    className="h-full group cursor-pointer"
                   >
-                    {/* Image Container */}
-                    <div className="aspect-[4/3] overflow-hidden relative">
-                      <img 
-                        src={item.image} 
-                        alt={`Gallery artwork`} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      
-                      {/* Hover text for full view */}
-                      <div className="absolute inset-0 bg-slate-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                        <span className="text-slate-900 font-inter font-medium px-4 py-2 bg-white/20 rounded-full border border-white/30 backdrop-blur-md">
-                          Click to full view
-                        </span>
+                    <div 
+                      className="bg-transparent rounded-2xl overflow-hidden border border-[var(--border-glass)] h-full flex flex-col relative"
+                      onClick={() => setSelectedImage(cloudId)}
+                    >
+                      {/* Image Container */}
+                      <div className="aspect-[4/3] overflow-hidden relative">
+                        <CldImage
+                          src={cloudId}
+                          width={800}
+                          height={600}
+                          alt={`Gallery artwork`} 
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Hover text for full view */}
+                        <div className="absolute inset-0 bg-slate-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                          <span className="text-slate-900 font-inter font-medium px-4 py-2 bg-white/20 rounded-full border border-white/30 backdrop-blur-md">
+                            Click to full view
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Tilt>
-              </motion.div>
-            ))}
+                  </Tilt>
+                </motion.div>
+              );
+            })}
           </AnimatePresence>
         </motion.div>
 
@@ -600,16 +613,26 @@ export const Gallery = () => {
             >
               <X className="w-6 h-6" />
             </button>
-            <motion.img
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              src={selectedImage}
-              alt="Full view"
-              className="w-auto h-auto max-w-full max-h-full rounded-lg shadow-2xl object-contain cursor-default"
+            <div 
+              className="relative w-full h-full max-w-5xl max-h-[90vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
-            />
+            >
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                className="w-full h-full flex items-center justify-center"
+              >
+                <CldImage
+                  src={selectedImage}
+                  width={1200}
+                  height={900}
+                  alt="Full view"
+                  className="w-auto h-auto max-w-full max-h-full rounded-lg shadow-2xl object-contain cursor-default"
+                />
+              </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
