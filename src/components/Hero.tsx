@@ -19,15 +19,7 @@ export const Hero = () => {
         
         {/* Left: Content */}
         <div className="space-y-8">
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 backdrop-blur-md text-xs sm:text-sm text-amber-300"
-          >
-            <Sparkles className="w-4 h-4 text-amber-400" />
-            <span className="tracking-wide uppercase font-semibold">RAHMAN ARTS | Professional Painting Services</span>
-          </motion.div>
+
 
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
